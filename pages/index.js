@@ -81,7 +81,7 @@ const searchTheme = createMuiTheme({
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 function Home({ changeTheme, theme }) {
-  const { data, error } = useSWR('https://chainid.network/chains.json', fetcher)
+  const { data, error } = useSWR('https://btwiuse.github.io/chains/chains.json', fetcher)
 
   const [ layout, setLayout ] = useState('grid')
   const [ search, setSearch ] = useState('')
